@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srirama</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .row-1{
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            font-family: calibri;
+            font-weight:200;
+            background-color:rgb(206, 208, 211);
+            padding: 15px;
+            }
+        nav span{
+            margin-right: 20px;
+        }
+        .quick-links span{
+            margin-right: 10px;
+            color: grey;
+        }
+        .row-2{
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            font-family: arial;
+            font-weight:200;
+            background-color:snow whitesmoke;
+            color: black;
+            padding: 20px;
+            margin-top:15px;
+            
+            }
+        .quick-links2 span{
+            margin-right: 10px;
+        }
+        .kerala{
+            font-weight: bold;
+            font-size: 30px;
+            margin-right: 5px;
+        }
+        article{
+            text-align: center;
+            background-color: black;
+            color: whitesmoke;
+            font-family: calibri;
+            padding: 5px;
+            margin-top: 5px;
+            }
+            article span{
+            color: gold;
+            }
+            .TamilNadu{
+                font-weight: bold;
+            }
+            section{
+                
+            }
+            .rama{
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+               padding: 20px;
+            }
+            .email{
+                background-color: rgb(71, 68, 68);
+                width: 300px;
+                padding: 20px;
+                color: whitesmoke;
+               
+                }
+            .button{
+                background-color: rgb(71, 68, 68);
+                width: 100px;
+                padding: 20px;
+                color: whitesmoke;
+                margin-left: 20px;
+                
+            }
+            .controls{
+            display:flex;
+            justify-content: center;
+           
+        }
+        .Hanuma{
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        footer{
+            height: 300px;
+            background-color: black;
+            color: white;
+        }
+        .TamilNadu{
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+        .TamilNadu+div{
+            margin-top: 15px;
+
+        }
+        .TamilNadu+div span{
+            margin-right: 10px;
+        }
+        .quick-links3{
+            margin-top: 15px;
+        }
+        .TamilNadu~div{
+            margin-bottom: 15px;
+            color: gray;
+        }
+        address div{
+            margin-bottom: 15px;
+        }
+        .women{
+            background-image: url("images/1women.jpg");
+            opacity: 0.6;
+        }
+        .women:hover{
+            opacity: 1;
+        }
+        .men{
+            background-image: url("images/2men.jpg");
+            opacity: 0.6;
+        }
+        .men:hover{
+            opacity: 1;
+        }
+        .kids{
+            background-image: url("images/3kids.png");
+            opacity: 0.6;
+        }
+        .kids:hover{
+            opacity: 1;
+        }
+        main div{
+            height: 400px;
+            background-size: cover;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 3fr 5fr 4fr;
+            margin-top: 20px;
+        }
+        .Seetha{
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            font-size: 25px;
+            color: white;
+            text-shadow: 2px 2px 2px black;   
+            margin-top: 250px;  
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            border: none;
+            background-color: white;
+            margin-bottom: 80px;
+            padding: 5px;
+        }
+        .lakshmana{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr 4fr;
+            margin-top: 20px;
+        }
+        .banglore{
+            font-size:14px;
+            font-family: calibri;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        fieldset{
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+        }
+        .dasarada{
+          text-align: center;
+          margin-top: 100px;
+          font-family: Times New Roman;
+        }
+        .kausalya{
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        .saumitri{
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sugreeva{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin: 50px;
+        }
+        .south{
+            background-image: url("images/4saree.jpg");
+            background-size: cover;
+            opacity: 0.6;
+            height: 400px;
+            margin-left: 30px;
+        }
+        .south:hover{
+            opacity: 1;
+        }
+        .north{
+            background-image: url("images/5suit.jpg");
+            background-size: cover;
+            opacity: 0.6;
+            margin-left: 30px;
+            position: relative;
+        }
+        .north:hover{
+            opacity: 1;
+        }
+        .offer{
+            background-color: yellow;
+            color: red;
+            width: 50px;
+            height: 50px;
+            font-weight: bold;
+            border-radius: 150px;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+           position: absolute;
+           right: 10px;
+           top: 10px;
+           font-family: arial;
+        }
+        .tara{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin: 50px;
+        }
+        .east{
+            background-image: url("images/9lehanga.jpg");
+            background-size: cover;
+            opacity: 0.6;
+            height: 400px;
+            width: 800px;
+            margin-left: 30px;
+        }
+        .east:hover{
+            opacity: 1;
+        }
+        .west{
+            background-image: url("images/7suit.jpg");
+            background-size: cover;
+            opacity: 0.6;
+            height: 400px;
+            margin-left: 30px;
+        }
+        .west:hover{
+            opacity: 1;
+        }
+        .baratha{
+            display: grid;
+            justify-content: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+      .vasudeva{
+        font-size: 25px;
+        font-weight: bold;
+        font-family:"Times New Roman"
+    }
+    .devaki{
+        display:flex;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .cards-row1{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+    .card-body{
+        margin-top: 50px;
+    }
+    p{
+        color: gray;
+        font-size: 14px;
+    }
+    .card-group{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .price{
+        font-size: 15px;
+        color: gray;
+        margin-bottom: 20px;
+    }
+    .cards-row2{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+    .urmila{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;      
+    }
+    .family{
+        display: flex;
+        background-color: blanchedalmond;
+        margin-bottom: 100px;
+    }
+    .ethinic{
+        font-size: 40px;
+        margin-left: 100px;
+        margin-top: 100px;
+       
+    }
+    time{
+        font-size: 70px;
+        font-family: bold;
+        text-shadow: 4px 4px 1px gray;
+        margin-bottom: 40px;
+    }
+    .vrindavanam{
+        display: grid;
+        justify-content: center;
+    }
+    .nandana{
+        color: gray;
+        font-size: 14px;
+        text-align: center;
+    }
+    .yasoda{
+        background-color: gray;
+        width: 300px;
+        font-size: 30px;
+        color: black;
+        padding: 5px;
+        margin-bottom: 100px;
+        margin-top: 20px;
+    }
+    .madhura{
+            display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        margin-bottom: 50px;
+        margin-left: 80px;
+        box-shadow: 2px 2px 1px gray;
+    }
+    .govinda{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        box-shadow: 2px 2px 2px gray;
+        margin-bottom: 100px;
+        margin-left: 20px;
+    }
+    .card-rating span{
+        color:rgb(236, 176, 25);
+        margin-bottom: 10px;
+    }
+    .vasudeva{
+        font-size: 25px;
+        font-weight: bold;
+        font-family:"Times New Roman"
+    }
+    .devaki{
+        display:flex;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .container{
+        display:grid;
+        background-color:whitesmoke;
+        color: gray;
+        height: 500px;
+        text-align: center;
+    }
+    .durga{
+        color: gray;
+        justify-content: center;
+    }
+    .rukhmini{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .lakshmi{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    }
+    .Narayana{
+        display: flex;
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        background-color: rgb(245, 235, 235);
+        justify-content: center;
+        background-color: whitesmoke;
+        border: none;
+        padding: 10px;
+    }
+    .radha{
+        display: flex;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr4 2fr;
+       padding: 3px;
+        
+    }
+    details{
+            margin-left: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="row-1">
+            <div>
+            <span class="bi bi-truck">&nbsp;&nbsp;FREE SHIPPING WORLDWIDE</span>
+        </div>
+        <div>
+            <nav>
+                <span>United States</span>
+                 <span>USD</span>
+                 <span>English</span>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <Span>Shipping</Span>
+                <Span>FAQ</Span>
+                <span>Contact</span>
+            </nav>
+        </div>
+        <div class="quick-links">
+            <span class="bi bi-facebook"></span>
+             <span class="bi bi-twitter"></span>
+              <span class="bi bi-instagram"></span>
+               <span class="bi bi-linkedin"></span>
+        </div>
+        </div>
+        <div class="row-2">
+            <div class="kerala">
+                <span>Shopper.</span>
+            </div>
+            <div>
+                <nav class="radha">
+                    <details><summary>Home</summary>
+                        <summary>Default</summary>
+                        <summary>class</summary>
+                        <summary>fashion</summary>
+                        <summary>Boxed</summary>
+                        <summary>Simple</summary>
+                    </details>
+                    <details><summary>Catalog</summary>
+                        <summary>Men</summary>
+                        <summary>women</summary>
+                        <summary>clothing</summary>
+                        <summary>Jewellery</summary>
+                    </details>
+                    <details><summary>Shop</summary>
+                        <summary>Product</summary>
+                        <summary>Account</summary>
+                        <summary>Models</summary>
+                        <summary>shop</summary>
+                    </details>
+                    <details><summary>Pages</summary>
+                        <summary>About</summary>
+                        <summary>Contact us</summary>
+                        <summary>FAQs</summary>
+                        <summary>Coming soon</summary>
+                    </details>
+                    <details><summary>Blog</summary>
+                        <summary>Blog</summary>
+                        <summary>Blog Post</summary>
+                    </details>
+                    <details><Summary>Docs</Summary></details>
+                </nav>
+            </div>
+            <div class="quick-links2">
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </div>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-charge-fill"></span>HAPPY HOLIDAY DEALS ON EVERYTHING<span class="bi bi-lightning-charge-fill"></span>
+    </article>
+    <section>
+         <main>
+            <div class="women">
+                <div class="Seetha">
+                    <div class="title">Women</div>
+                    <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="men">
+                <div class="Seetha">
+                    <div class="title">Men</div>
+                    <button>Shop Men<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="kids">
+                <div class="Seetha">
+                    <div class="title">Kids</div>
+                    <button>Shop Kids<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+         </main>
+         <div class="lakshmana">
+            <div>
+            <div class="banglore"><span class="bi bi-truck">&nbsp;</span>FREE SHIPPING</div>
+                <p>From all orders over $100</p>
+            </div>
+            <div>
+                <div class="banglore"><span class="bi bi-arrow-left-right">&nbsp;</span>FREE RETURNS</div>
+                <p>Return money within 30 days</p>
+            </div>
+            <div>
+                <div class="banglore"><span class="bi bi-lock">&nbsp;</span>SECURE SHOPPING</div>
+                <p>You're in safe hands</p>
+            </div>
+            <div>
+                <div class="banglore"><span class="bi bi-bookmark">&nbsp;</span>OVER 10,000 STYLES</div>
+            <p>We have everything you need</p>
+            </div>
+         </div>
+         <fieldset></fieldset>
+         <div class="dasarada">
+            <div class="kausalya">NEW COLLECTION</div>
+            <div class="saumitri">Best Picks 2023</div>
+            <div class="kiki">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,</div>
+            <div class="kiki">above fly brought Very green.</div>
+         </div>
+         <div class="sugreeva">
+            <div class="south">
+                <div class="Seetha">
+                    <div class="title">Bridal Collection</div>
+                    <button>Shop Now<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="north">
+                <div class="Seetha">
+                    <div class="title">Groom Collection</div>
+                    <button>Shop Now<span class="bi bi-arrow-right"></span></button>
+                </div>
+                <div class="offer">
+                    save 30%
+                </div>
+            </div>
+            </div>
+            <div class="tara">
+                <div class="east">
+                    <div class="Seetha">
+                        <div class="title"> Designer Lehanga Collection</div>
+                        <button>Shop Now<span class="bi bi-arrow-right"></span></button>
+                    </div>
+                </div>
+                <div class="west">
+                    <div class="Seetha">
+                        <div class="title">Designer Suit Collection</div>
+                        <button>Shop Now<span class="bi bi-arrow-right"></span></button>
+                    </div>
+                </div>
+                </div>
+                <div class="baratha">
+                    <div class="vasudeva">
+                       Top month Sellers
+                    </div>
+                    <div class="devaki">
+                        <nav>
+                            <span>Women</span>
+                            <span>Men</span>
+                            <span>Kids</span>
+                        </nav>
+                    </div>
+                </div>
+                <div class="cards-row1">
+                    <div>
+                        <div class="card-body">
+                            <img alt="" src="images/heel1.jpg" width="300" height="300">
+                            <p>Wedding Sandal</p>
+                            <div class="card-group">Leather mid-heel Sandals</div>
+                            <div class="price">$129.00</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <img alt="" src="images/pattu sarees.jpg" width="300" height="300">
+                            <p>Sarees</p>
+                            <div class="card-group">Kanchipuram Pattu Sarees</div>
+                            <div class="price">$1190.00</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <img alt="" src="images/10neck.jpg" width="300" height="300">
+                            <p>Maang tika</p>
+                            <div class="card-group">Bridal Gold Maang Tikka Designs</div>
+                            <div class="price"><span><strike>$266.00</strike>&nbsp;&nbsp;</span>$116.00</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <img alt="" src="images/bangles.jpg" width="300" height="300">
+                            <p>Churi</p>
+                            <div class="card-group">Women Churi Sets</div>
+                            <div class="price">$180.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-row2">
+                    <div>
+                        <div class="card-body">
+                            <img src="images/menshoe.png" alt="" width="300" height="300">
+                            <p>Men Shoe</p>
+                            <div class="card-group">Leather Sneakers</div>
+                            <div class="price">$85.00</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <img src="images/suitmen.jpg" width="300" alt="" height="300">
+                            <p>Suits</p>
+                            <div class="card-group">Boglioli Suits</div>
+                            <div class="price"><span><strike>$159.00</strike>&nbsp;&nbsp;</span>$400.00</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <img src="images/menwatch.jpg" alt="" width="300" height="300">
+                            <p>Watches</p>
+                            <div class="card-group">Designer Rollex watches</div>
+                            <div class="price">$150.00</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-body">
+                            <img src="images/menpin.jpg" alt="" width="300" height="300">
+                            <p>Brooch Chains</p>
+                            <div class="card-group">Designer Suit Brooch chain</div>
+                            <div class="price">$170.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="urmila">Discover more
+                <div>______________</div>
+            </div>
+            <div class="family">
+                <div>d
+                    <img alt="" src="images/ethnic.jpg">
+                </div>
+                <div class="ethinic">
+                    <div>Get -50% from <br>
+                        Ethinic Collection</div>
+                        <time>    982:20:24:42Sec  </time>
+                        <button>Shop Now<span class="bi bi-arrow-right"></span></button>    
+            </div>
+   </section>
+   <div class="vrindavanam">
+     <div class="nandana">
+        WHAT BUYERS SAY</div>
+        <div class="yasoda">Latest buyers Reviews</div>
+   </div>
+</div>
+    </div>  
+    <div class="madhura">
+        <div class="govinda">
+            <div class="card-header">
+            <img alt="" src="images/menshoe.png" width="200" height="200">
+      </div>
+        <div><p>Men Shoe</p> 
+        <div class="card-group">Leather Sneakers</div>
+        <div class="card-rating">
+        <span class="bi bi-star"></span>
+        <span class="bi bi-star"></span>
+        <span class="bi bi-star"></span>
+        <span class="bi bi-star"></span>
+        <span class="bi bi-star"></span>
+    </div>
+    </div>
+    <p>From creepeth said moved given divide make multiply of him shall itself also above second doesn't unto created saying land herb sea midst night wherein.</p>
+    <br><div class="cfoot">
+        Logan Edwards, 01 Jun 2023
+    </div>
+    </div>
+    <div class="govinda">
+        <div class="card-header">
+        <img  alt='' src="images/bangles.jpg" width="200" height="200">
+  </div>
+    <div><p>Churi</p> 
+    <div class="card-group">Women Churi Sets</div>
+    <div class="card-rating">
+    <span class="bi bi-star"></span>
+    <span class="bi bi-star"></span>
+    <span class="bi bi-star"></span>
+    <span class="bi bi-star"></span>
+    <span class="bi bi-star"></span>
+</div>
+</div>
+<p>The intricate design of my bangles accentuates my beauty, making me feel even more gorgeous.</p>
+<br><div class="cfoot">
+    Jane Jefferson, 29 May 2023
+</div>
+</div>
+<div class="govinda">
+    <div class="card-header">
+    <img alt="" src="images/menwatch.jpg" width="150" height="150">
+</div>
+<div><p>Watches</p> 
+<div class="card-group">Designer Rollex watches</div>
+<div class="card-rating">
+<span class="bi bi-star"></span>
+<span class="bi bi-star"></span>
+<span class="bi bi-star"></span>
+<span class="bi bi-star"></span>
+<span class="bi bi-star"></span>
+</div>
+</div>
+<p>Shopping for a brand new watch can be exciting. At the same time, it can also be daunting especially if this is the first time you’ll be buying a watch for yourself. Hence, a watch buying guide comes in handy.</p>
+<br><div class="cfoot">
+    Darrell Baker,18 May 2023
+    </div>
+    </div>
+    </div>
+   <div class="container">
+    <div class="rukhmini">
+        <div class="vasudeva">@shopper</div>
+         <div class="durga">Appear, dry there darkness they're seas, dry waters.</div>
+    </div>
+    <div class="lakshmi">
+        <div><img alt="" src="images/1women.jpg" width="160px" height="160px"></div>
+        <div><img alt="" src="images/suitmen.jpg"  width="160px" height="160px"></div>
+        <div><img alt="" src="images/9lehanga.jpg"  width="160px" height="160px"></div>
+        <div><img alt="" src="images/2men.jpg"  width="160px" height="160px"></div>
+        <div><img  alt="" src="images/salwar.jpg"  width="160px" height="160px"></div>
+        <div><img alt="" src="images/4saree.jpg"  width="160px" height="160px"></div>
+    </div>
+    <div class="Narayana">
+        <div><img alt="" src="images/mango.jpg"width="140px" height="160px"></div>
+        <div><img alt="" src="images/Zara-Logo.png"width="160px" height="160px"></div>
+        <div><img alt="" src="images/Reebok.png"width="160px" height="160px"></div>
+        <div><img alt="" src="images/adidas.jpg"width="160px" height="160px"></div>
+        <div><img alt="" src="images/stradivira.jpg"width="160px" height="160px"></div>
+        <div><img alt="" src="images/bershka-logo.jpg"width="160px" height="160px"></div>
+    </div>
+   </div>
+    <footer>
+        <div class="rama">
+            <span>Want style Ideas and Treats?</span> 
+        </div>
+        <div class="controls">
+            <div class="email">Enter Email*</div>
+            <div class="button">Suscribe </div>          
+            </div>
+       <div class="Hanuma">
+                <div class="col-1">
+                <div class="kerala">
+                    <span>Shopper.</span>
+                </div>
+                <div class="quick-links3">
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="TamilNadu">SUPPORT</div>
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+            </div>
+            <div class="col-3">
+                <div class="TamilNadu">SHOP</div>
+                <div>Men's Shopping</div>
+                <div>Women's Shopping</div>
+                <div>Kids' Shopping</div>
+                <div>Discounts</div>
+            </div>
+            <div class="col-4">
+                <div class="TamilNadu">COMPANY</div>
+                <div>Our Story</div>
+                <div>Careers</div>
+                <div>Terms & Conditions</div>
+                <div>Privacy & Cookie Policy</div>
+            </div>
+            <div class="col-5">
+                <div class="TamilNadu">CONTACT</div>
+                <address>
+                    <div>1-202-555-0105</div>
+                <div>1-202-555-0106</div>
+                <div>help@shopper.com</div>
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
